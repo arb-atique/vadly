@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ movie.title }}
+{% endblock  %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <h3>{{ movie.title }}</h3>
+                <p>{{ movie.release_year }}</p>
+                <p>{{ movie.daily_rate }}</p>
+                <p>{{ movie.number_in_stock }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock  %}
